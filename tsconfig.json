@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "paths": {
+      // "@mui/styled-engine": ["./node_modules/@mui/styled-engine-sc"],
+    },
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true, // ts에서의 import 구문을 js처럼 써도 에러가 안뜨게 함.
+    // "keyofStringsOnly": true,
+    // "skipLibCheck": true,
+    // "sourceMap": true,
+    "downlevelIteration": true,
+
+    // "noResolve": false,
+    // "removeComments": false,
+
+    "target": "es6",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "baseUrl": "src",
+
+    "outDir": "./out",
+    "rootDir": "./src",
+    // mui 사요에 필요한 최소 구성
+    "lib": ["es6", "dom"],
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "resolveJsonModule": true
+  },
+  "typeRoots": ["node_modules/@types", "src/@type"],
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/setupTests.ts",
+    "./node_modules/**/*"
+  ],
+  "include": ["./src/**/*", "@type"]
+}

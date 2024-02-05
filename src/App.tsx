@@ -1,6 +1,5 @@
 import React from "react";
-import "./style.css";
-import Clock from "../../analog-clock/src/pages/Clock";
+import Clock from "./pages/Clock";
 
 function App() {
   return (
